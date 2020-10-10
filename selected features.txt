@@ -1,0 +1,19 @@
+1: phishing
+0: suspicious
+-1: legitimate
+
+
+1. using ip address
+2. long url used.
+3. using short url (bit.ly)
+4. url having "@"
+5. redirecting using //
+6. addinf prefix suffix (url having "-" symbol)
+7. sub domain and multi sub domain
+
+8. existence of https token
+
+9. website forwading
+10.disable right click
+11. using iframe tag
+
