@@ -1,0 +1,59 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+:root {
+	--my-font: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+.main-container {
+	overflow-y: hidden;
+	display: block;
+	margin: 30vh auto auto;
+	font-family: 'PT Sans', Helvetica, Arial;
+	font-size: 2em;
+	text-align: center;
+	color: #353535;
+}
+
+.input-bar {
+	padding: 10px;
+	overflow-x: auto;
+	font-size: 100%;
+	border: 2px solid #666;
+	border-radius: 5px;
+	color: #353535;
+}
+.input-bar:focus {
+	border: 2px solid #c9ba36;
+}
+.btn-submit{
+	border: none;
+	background: none;
+	margin: auto 0;
+	font-size: 100%;
+	color: #4f5cd3;
+}
+
+@media(max-width: 600px){
+	.main-container p{
+		display: flex;
+		flex-direction: column;
+		font-size: 22px;
+		padding: 4px;
+	}
+	.input-bar{
+		margin: 8px auto;
+	}
+}
