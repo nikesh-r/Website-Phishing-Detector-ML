@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>is this phishing?</title>
+		<link rel="icon" href="./static/res/phishing.png" type="image/icon type">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			*, *:before, *:after {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+			.main {
+				background-color: white;
+				overflow-y: hidden;
+				display: block;
+				font-family: 'PT Sans', Helvetica, Arial;
+				margin: 30vh auto auto;
+				text-align: center;
+				color: #353535;
+			}
+			.result {
+				font-size: 2em;
+				margin-bottom: 0.8em;
+			}
+			.btnHome {
+				font-size: 1.6em;
+				padding: 18px;
+				cursor: pointer;
+				border: 2px solid #4f5cd380;
+				border-radius: 5px;
+				color: #353535;
+			}
+			.btnHome:hover {
+				color: #4f5cd3;
+				border: 2px solid #353535;
+			}
+			body {
+				position: relative;
+			}
+			.trade {
+				font-size: 1.2em;
+				font-family: 'PT Sans', Helvetica, Arial;
+				margin: auto 0 0 auto;
+				position: fixed;
+				bottom: 10px;
+				right: 10px;
+
+			}
+		</style>
+	</head>
+	<body class="main">
+		<p class="result">{{phish_result}}</p>
+		<button onclick="location.href = '/';" class="btnHome">Check another Url?</button>
+		<div class="trade">&copy; Nikesh and team</div>
+	</body>
+</html>
